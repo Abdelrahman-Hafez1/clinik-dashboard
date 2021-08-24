@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <section class="side-bar">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        
+        <div class="menu">
+            <div class="profile">
+                <div class="row align-items-center">
+                    <div class="img-container">
+                        <img src="images/xmodel_2_bg.jpg.pagespeed.ic.Dx8UdJMQDq.webp" alt="">
+                    </div>
+    
+                    <div class="detail">
+                        <p>Adel Rayan Khalil</p>
+                        <a href="profile.html"> <i class="fas fa-cog"></i>اعدادات الحساب</a>
+                    </div>
+                </div><!-- row -->
+            
+            </div><!-- profile -->
+            <ul class="list-unstyled">
+                <li><a href="index.html"><i class="fas fa-home"></i> الرئيسيه</a></li>
+                <li><a href="patients.html"><i class="fas fa-user-injured"></i> المرضي</a></li>
+                <li><a href="ill_name_side.html"><i class="fas fa-virus"></i> الحالات الصحيه والامراض</a></li>
+                <li><a href="medicine_side.html"><i class="fas fa-prescription-bottle-alt"></i> قائمه الادويه والحساسيه</a></li>
+                <li><a href="examination_labs.html"><i class="fas fa-x-ray"></i> قائمه الاشعه والتحاليل</a></li>
+            </ul>
+        </div><!-- menu -->
+
+    </section><!-- side-bar -->
+
+    <section class="navbar">
+        <nav>
+            <div class="d-flex justify-content-between">
+                <i class="fas fa-bars"></i>
+
+                <!-- navbar left dropdowns -->
+                <div class="d-flex">
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="far fa-user active"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="profile.html" class="active"><i class="fas fa-cog"></i>اعدادات الحساب</a></li>
+                                <li><a href="#"><i class="fas fa-lock"></i> تغيير كلمه المرور</a></li>
+                                <li><a href="#"><i class="fas fa-sign-out-alt"></i> تسجيل خروج</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="far fa-bell"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">notification 1</a></li>
+                                <li><a href="#">notification 2</a></li>
+                                <li><a href="#">notification 31</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="fas fa-language"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="active">العربيه</a></li>
+                                <li><a href="#"> English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </nav>    
+    </section><!-- navbar -->
+
+    <section class="content">
+        <div class="container">
+            <h1><i class="fas fa-cog"></i> اعدادات الحساب</h1>
+            
+            <section id="profile">
+                <form action="" method="post">
+                    <div class="img-upload">
+                        <img src="images/xmodel_2_bg.jpg.pagespeed.ic.Dx8UdJMQDq.webp" alt="">
+                        <input type="file" name=""class="my-file">
+                        <i class="fas fa-camera"></i>
+                        
+                    </div>
+                    <div class="from-inputs">
+                        <div class="row">
+                            <!-- first name -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <input type="text" value="Adel">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <!-- last name -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <input type="text" value="Mohammed">
+                                <i class="fa fa-user"></i>
+                            </div>
+                            <!-- telephone -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <input type="tel" maxlength="11" value="01092747214">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <select>
+                                    <option value="" disabled>المحافظه</option>
+                                    <option value="" selected>الشرقيه</option>
+                                    <option value="" >الدقهليه</option>
+                                    <option value="" >الدقهليه</option>
+                                </select>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <select>
+                                    <option value="" disabled>المحافظه</option>
+                                    <option value="" selected>الشرقيه</option>
+                                    <option value="" >الدقهليه</option>
+                                </select>
+                            </div>
+
+                            <!--  -->
+
+                            <div class="col-md-6 my-form-control mb-2">
+                                <input type="text" value="القوميه">
+                                <i class="fa fa-pen-alt"></i>
+                            </div>
+
+                            <!--  -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <select>
+                                    <option value="" selected>القلب والاوعيه الدمويه</option>
+                                    <option value="">option1</option>
+                                    <option value="" >option 2</option>
+                                </select>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <select>
+                                    <option value="" selected>جراحه القلب والصدر</option>
+                                    <option value="">option1</option>
+                                    <option value="" >option 2</option>
+                                </select>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <select>
+                                    <option value="" selected>الحساسيه</option>
+                                    <option value="">option1</option>
+                                    <option value="" >option 2</option>
+                                </select>
+                            </div>
+                            <!--  -->
+                            <div class="col-md-6 my-form-control mb-2">
+                                <select>
+                                    <option value="" selected>اخصائي</option>
+                                    <option value="">option1</option>
+                                    <option value="" >option 2</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-info text-white">حفظ</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div><!-- container -->
+    </section><!-- content -->
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

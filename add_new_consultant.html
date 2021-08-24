@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+
+
+</head>
+<body>
+    
+    <section class="side-bar">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        
+        <div class="menu">
+            <div class="profile">
+                <div class="row align-items-center">
+                    <div class="img-container">
+                        <img src="images/xmodel_2_bg.jpg.pagespeed.ic.Dx8UdJMQDq.webp" alt="">
+                    </div>
+    
+                    <div class="detail">
+                        <p>Adel Rayan Khalil</p>
+                        <a href="profile.html"> <i class="fas fa-cog"></i>اعدادات الحساب</a>
+                    </div>
+                </div><!-- row -->
+            
+            </div><!-- profile -->
+            <ul class="list-unstyled">
+                <li><a href="index.html" ><i class="fas fa-hospital"></i> العياده</a></li>
+                <li><a href="hospital_accounts.html" ><i class="fas fa-hospital"></i> حسابات المستشفي الداخليه</a></li>
+                <li>
+                    <a href="patients.html" class="active drop">
+                        <i class="fas fa-user-injured"></i>
+                         المرضي
+                        <i class="fas fa-chevron-down d-xl-none"></i>
+                    </a>
+
+                    <div class="navigation-content d-xl-none">
+                        <ul class="list-unstyled">
+                            <li><a href="nursing_index.html" class="active">رئيسه التمريض</a></li>
+                            <li><a href="consultant.html">الاستشارات</a></li>
+                            <li><a href="ill_name_side.html">الحالات الصحيه والامراض</a></li>
+                            <li><a href="medicine.html">الادويه</a></li>
+                            <li><a href="examinations.html">الاشعه والتحاليل</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- menu -->
+
+    </section><!-- side-bar -->
+
+    <section class="navbar colored bg-info text-white">
+        <nav>
+            <div class="d-flex justify-content-between">
+                <i class="fas fa-bars"></i>
+
+                <!-- navbar links -->
+                <div class="nav-links d-xl-block d-none">
+                    <ul class="list-unstyled">
+                        <li><a href="nursing_index.html">رئيسه التمريض</a></li>
+                        <li><a href="consultant.html"  class="active">الاستشارات</a></li>
+                        <li><a href="ill_name_side.html">الحالات الصحيه والامراض</a></li>
+                        <li><a href="medicine.html">الادويه</a></li>
+                        <li><a href="examinations.html">الاشعه والتحاليل</a></li>
+                    </ul>
+                </div>
+
+                <!-- navbar left dropdowns -->
+                <div class="d-flex">
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="far fa-user"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="profile.html"><i class="fas fa-cog"></i>اعدادات الحساب</a></li>
+                                <li><a href="#"><i class="fas fa-lock"></i> تغيير كلمه المرور</a></li>
+                                <li><a href="#"><i class="fas fa-sign-out-alt"></i> تسجيل خروج</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="far fa-bell"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">notification 1</a></li>
+                                <li><a href="#">notification 2</a></li>
+                                <li><a href="#">notification 31</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="fas fa-language active"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="active">العربيه</a></li>
+                                <li><a href="#"> English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </nav>    
+    </section><!-- navbar -->
+
+    <!-- start content -->
+    <section class="content">
+        <div class="container">
+                <h1>
+                    استشاره جديده
+                </h1>
+            
+                <section id="new-examination">
+                    <form action="" method="post">
+                        <div class="from-inputs">
+                            <div class="row">
+                                <div class="col-md-6 my-form-control mb-2">
+                                    <input type="text" placeholder="التشخيص">
+                                    <i class="fa fa-pen"></i>
+                                </div>
+                                <div class="col-md-6 my-form-control mb-2">
+                                    <select>
+                                        <option value="" disabled selected>اضافه الي</option>
+                                        <option value="" >optoin</option>
+                                        <option value="" >option</option>
+                                        <option value="" >option</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 my-form-control mb-2">
+                                    <input type="text" placeholder="التاريخ">
+                                    <i class="fa fa-calendar-alt"></i>
+                                </div>
+                                <div class="col-12 my-form-control mb-2">
+                                    <div id="editor">الاعراض ونتائج الفحص</div>
+                                </div>
+                                <div class="col-12 my-form-control mb-2">
+                                    <div id="editor2">التعليقات</div>
+                                </div>               
+                                <div class="btns col-12 text-start">
+                                    <a href="#" class="btn btn-gray mx-2"> <i class="fa fa-plus mx-2"></i> اضافه دواء جديد </a>
+                                    <button type="submit" class="btn btn-info text-white">حفظ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </section>
+
+                <h2>اضافه دواء جديد</h2>
+                <section id="new-examination" class="mt-2 mb-3">
+                    <form action="" method="post">
+                        <div class="from-inputs">
+                            <div class="row">
+                                <div class="col-md-6 my-form-control mb-2">
+                                    <input type="text" placeholder="الادويه">
+                                    <i class="fa fa-pen"></i>
+                                </div>
+                                <div class="col-md-6 my-form-control mb-2">
+                                    <select>
+                                        <option value="" disabled selected>اضافه الي</option>
+                                        <option value="" >optoin</option>
+                                        <option value="" >option</option>
+                                        <option value="" >option</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 my-form-control mb-2">
+                                    <input type="text" placeholder="الجرعه">
+                                    <i class="fa fa-pen"></i>
+                                </div>
+              
+                                <div class="btns col-12 text-start">
+                                    <button type="submit" class="btn btn-info text-white">اضافه دواء جديد</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </section>
+        </div><!-- container -->
+    </section><!-- content -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable({
+
+                
+            });
+        });
+    </script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+                language: {
+            // The UI will be English.
+            ui: 'ar',
+
+            // But the content will be edited in Arabic.
+            content: 'ar'
+        },
+            
+            toolbar: {
+                items: [ 'heading', '|',
+                        'fontfamily', 'fontsize', '|',
+                        'alignment', '|',
+                        'fontColor', 'fontBackgroundColor', '|',
+                        'bold', 'italic', 'strikethrough', 'underline', 'subscript', 'superscript', '|',
+                        'link', '|',
+                        'outdent', 'indent', '|',
+                        'bulletedList', 'numberedList', 'todoList', '|',
+                        'code', 'codeBlock', '|',
+                        'insertTable', '|',
+                         'blockQuote', '|',
+                        'undo', 'redo' ],
+                        shouldNotGroupWhenFull: true
+            },
+            heading: {
+                options: [
+                    { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                    { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                    { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+                ]
+            }
+            })
+            .catch( error => {
+                console.log( error );
+            } );
+</script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor2' ), {
+                language: {
+            // The UI will be English.
+            ui: 'ar',
+
+            // But the content will be edited in Arabic.
+            content: 'ar'
+        },
+            
+            toolbar: {
+                items: [ 'heading', '|',
+                        'fontfamily', 'fontsize', '|',
+                        'alignment', '|',
+                        'fontColor', 'fontBackgroundColor', '|',
+                        'bold', 'italic', 'strikethrough', 'underline', 'subscript', 'superscript', '|',
+                        'link', '|',
+                        'outdent', 'indent', '|',
+                        'bulletedList', 'numberedList', 'todoList', '|',
+                        'code', 'codeBlock', '|',
+                        'insertTable', '|',
+                         'blockQuote', '|',
+                        'undo', 'redo' ],
+                        shouldNotGroupWhenFull: true
+            },
+            heading: {
+                options: [
+                    { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                    { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                    { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+                ]
+            }
+            })
+            .catch( error => {
+                console.log( error );
+            } );
+</script>
+
+
+</body>
+</html>

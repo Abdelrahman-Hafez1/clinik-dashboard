@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+    <section class="side-bar">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        
+        <div class="menu">
+            <div class="profile">
+                <div class="row align-items-center">
+                    <div class="img-container">
+                        <img src="images/xmodel_2_bg.jpg.pagespeed.ic.Dx8UdJMQDq.webp" alt="">
+                    </div>
+    
+                    <div class="detail">
+                        <p>Adel Rayan Khalil</p>
+                        <a href="profile.html"> <i class="fas fa-cog"></i>اعدادات الحساب</a>
+                    </div>
+                </div><!-- row -->
+            
+            </div><!-- profile -->
+            <ul class="list-unstyled">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> الرئيسيه</a></li>
+                <li><a href="patients.html"><i class="fas fa-user-injured"></i> المرضي</a></li>
+                <li><a href="ill_name_side.html"><i class="fas fa-virus"></i> الحالات الصحيه والامراض</a></li>
+                <li><a href="medicine_side.html"><i class="fas fa-prescription-bottle-alt"></i> قائمه الادويه والحساسيه</a></li>
+                <li><a href="examination_labs.html"><i class="fas fa-x-ray"></i> قائمه الاشعه والتحاليل</a></li>
+            </ul>
+        </div><!-- menu -->
+
+    </section><!-- side-bar -->
+
+    <section class="navbar">
+        <nav>
+            <div class="d-flex justify-content-between">
+                <i class="fas fa-bars"></i>
+
+                <!-- navbar left dropdowns -->
+                <div class="d-flex">
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="far fa-user"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="profile.html"><i class="fas fa-cog"></i>اعدادات الحساب</a></li>
+                                <li><a href="#"><i class="fas fa-lock"></i> تغيير كلمه المرور</a></li>
+                                <li><a href="#"><i class="fas fa-sign-out-alt"></i> تسجيل خروج</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="far fa-bell"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#">notification 1</a></li>
+                                <li><a href="#">notification 2</a></li>
+                                <li><a href="#">notification 31</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="dropdown">
+
+                        <!-- icon (toggle dropdown menu)-->
+
+                        <i class="fas fa-language active"></i>
+                        <div class="mydropdown-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="active">العربيه</a></li>
+                                <li><a href="#"> English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+               
+            </div>
+        </nav>    
+    </section><!-- navbar -->
+
+    <!-- start content -->
+    <section class="content">
+        <div class="container">
+            <h1><i class="fas fa-home"></i> الرئيسيه</h1>
+            
+            <!-- cards -->
+            <section class="cards">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <a href="profile.html" class="btn btn-success">
+                            <i class="fas fa-user-injured"></i>
+                            <h3>المرضي</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <a href="ill_name_side.html" class="btn btn-info text-white">
+                            <i class="fas fa-user-injured"></i>
+                            <h3>الحالات الصحيه والامراض</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <a href="medicine_side.html" class="btn btn-danger">
+                            <i class="fas fa-user-injured"></i>
+                            <h3>قائمه الادويه والحساسيه</h3>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <a href="examinations.html" class="btn btn-violet">
+                            <i class="fas fa-user-injured"></i>
+                            <h3>قائمه الاشعه والتحاليل</h3>
+                        </a>
+                    </div>
+                </div>
+            </section><!-- cards -->
+
+            <section id="alerts">
+                <div id="alert">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>قمت باضافه مريض جديد</p>
+                        <p class="time"><i class="far fa-clock"></i>2-8-2021</p>
+                    </div>
+                </div><!-- alert 1 -->
+
+                <div id="alert">
+                    <div class="d-flex justify-content-between align-items-center separeat">
+                        <p>قمت باضافه استشاره جديد</p>
+                        <p class="time"><i class="far fa-clock"></i>2-8-2021</p>
+                    </div>
+                    <div class="pt-3">
+                        <span>CALCIMATE FORT TAB</span>
+                        <a href="#">الي sad</a>
+                    </div>
+                </div><!-- alert 2 -->
+
+
+                <div id="alert">
+                    <div class="d-flex justify-content-between align-items-center separeat">
+                        <p>قمت باضافه حاله مرضيه جديده</p>
+                        <p class="time"><i class="far fa-clock"></i>2-8-2021</p>
+                    </div>
+                    <div class="pt-3">
+                        <span>هشاشه عظام</span>
+                        <a href="#">الي sad</a>
+                    </div>
+                </div><!-- alert 3 -->
+
+
+                <div id="alert">
+                    <div class="d-flex justify-content-between align-items-center separeat">
+                        <p>قمت باضافه حاله مرضيه جديده</p>
+                        <p class="time"><i class="far fa-clock"></i>2-8-2021</p>
+                    </div>
+                    <div class="pt-3">
+                        <span>هشاشه عظام</span>
+                        <a href="#">الي sad</a>
+                    </div>
+                </div><!-- alert 4 -->
+
+            </section><!-- alerts -->
+
+        </div><!-- container -->
+    </section><!-- content -->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
